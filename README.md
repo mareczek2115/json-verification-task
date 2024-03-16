@@ -22,8 +22,16 @@
 ```
 
 ## Run the app
-Clone the repo with the `git clone` command. In the project directory, install dependencies with `npm install` and install TypeScript globally with `npm install -g typescript`. Afterward, compile the TypeScript file with `tsc main.ts` and then type `node main.js` to run the function and test the provided JSON. If you want to change the input data, paste your JSON into `json/jsonToVerify.json` and run the `node main.js` command again.
+Firstly, clone the repo: 
+    `git clone https://github.com/mareczek2115/json-verification-task`
+In the project directory, install project dependencies and TypeScript globally:
+    `npm install`
+    `npm install -g typescript` 
+Afterward, compile the TypeScript file and then run the function and test the provided JSON.
+    `tsc main.ts`
+    `node main.js`
+If you want to change the input data, paste your JSON into `json/jsonToVerify.json` and run the `node main.js` command again.
 
 ## Unit test
 A file with unit tests is also included, with multiple cases of JSON testing. You can run them with the following command: 
-### `npm run test`.
+    `npm run test`.
