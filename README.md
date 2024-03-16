@@ -32,6 +32,6 @@ Afterward, compile the TypeScript file and then run the function and test the pr
 #### `node main.js`
 If you want to change the input data, paste your JSON into `json/jsonToVerify.json` and run the `node main.js` command again.
 
-## Unit test
+## Unit tests
 A file with unit tests is also included, with multiple cases of JSON testing. You can run them with the following command:
 #### `npm run test`.
