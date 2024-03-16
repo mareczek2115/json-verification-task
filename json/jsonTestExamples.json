@@ -1,0 +1,158 @@
+{
+    "StatementArray": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "IamListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListRoles",
+                        "iam:ListUsers"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        }
+    },
+
+    "StatementObject": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": {
+                "Sid": "IamListAccess",
+                "Effect": "Allow",
+                "Action": [
+                    "iam:ListRoles",
+                    "iam:ListUsers"
+                ],
+                "Resource": "*"
+            }
+        }
+    },
+
+    "MissingPolicyDocument": {
+        "PolicyName": "root"
+    },
+
+    "EmptyPolicyDocument": {
+        "PolicyName": "root",
+        "PolicyDocument": {}
+    },
+
+    "MissingStatement": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17"
+        }
+    },
+
+    "EmptyStatement": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": []
+        }
+    },
+
+    "EmptyObjectInsideStatement": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {}
+            ]
+        }
+    },
+
+    "MissingResource": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "IamListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListRoles",
+                        "iam:ListUsers"
+                    ]
+                }
+            ]
+        }
+    },
+
+    "IncorrectResource_1": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "IamListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListRoles",
+                        "iam:ListUsers"
+                    ],
+                    "Resource": "  "
+                }
+            ]
+        }
+    },
+
+    "IncorrectResource_2": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "IamListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListRoles",
+                        "iam:ListUsers"
+                    ],
+                    "Resource": " *"
+                }
+            ]
+        }
+    },
+
+    "IncorrectResource_3": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "IamListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListRoles",
+                        "iam:ListUsers"
+                    ],
+                    "Resource": "* "
+                }
+            ]
+        }
+    }, 
+
+    "IncorrectResource_4": {
+        "PolicyName": "root",
+        "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "IamListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListRoles",
+                        "iam:ListUsers"
+                    ],
+                    "Resource": "test*test"
+                }
+            ]
+        }
+    }
+}
